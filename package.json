@@ -1,0 +1,33 @@
+{
+  "name": "template-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "handlebar": "node templating-tests/handlebars/runner.js",
+    "ejs": "node templating-tests/ejs/runner.js",
+    "mustache": "node templating-tests/mustache/runner.js",
+    "nunjucks": "node templating-tests/nunjucks/runner.js",
+    "pug": "node templating-tests/pug/runner.js",
+    "eta": "node templating-tests/eta/runner.js",
+    "react": "node templating-tests/react/runner.js",
+    "react-transcribe": "npx babel templating-tests/react/MyComponent.jsx --out-file templating-tests/react/MyComponent.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "eta": "^3.4.0",
+    "handlebars": "^4.7.8",
+    "mustache": "^4.2.0",
+    "nunjucks": "^3.2.4",
+    "pug": "^3.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-react": "^7.24.1"
+  }
+}
